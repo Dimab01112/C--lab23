@@ -62,7 +62,7 @@ class Program
         }
         else
         {
-            return "Equilateral";
+            return "notEquilateral";
         }
     }
 }
