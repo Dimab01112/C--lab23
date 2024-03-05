@@ -1,0 +1,14 @@
+C:\gayms\Projects\Task3\bin\Debug\net8.0\Task3.exe
+C:\gayms\Projects\Task3\bin\Debug\net8.0\Task3.deps.json
+C:\gayms\Projects\Task3\bin\Debug\net8.0\Task3.runtimeconfig.json
+C:\gayms\Projects\Task3\bin\Debug\net8.0\Task3.dll
+C:\gayms\Projects\Task3\bin\Debug\net8.0\Task3.pdb
+C:\gayms\Projects\Task3\obj\Debug\net8.0\Task3.GeneratedMSBuildEditorConfig.editorconfig
+C:\gayms\Projects\Task3\obj\Debug\net8.0\Task3.AssemblyInfoInputs.cache
+C:\gayms\Projects\Task3\obj\Debug\net8.0\Task3.AssemblyInfo.cs
+C:\gayms\Projects\Task3\obj\Debug\net8.0\Task3.csproj.CoreCompileInputs.cache
+C:\gayms\Projects\Task3\obj\Debug\net8.0\Task3.dll
+C:\gayms\Projects\Task3\obj\Debug\net8.0\refint\Task3.dll
+C:\gayms\Projects\Task3\obj\Debug\net8.0\Task3.pdb
+C:\gayms\Projects\Task3\obj\Debug\net8.0\Task3.genruntimeconfig.cache
+C:\gayms\Projects\Task3\obj\Debug\net8.0\ref\Task3.dll
