@@ -1,0 +1,14 @@
+C:\gayms\Projects\Task 4\bin\Debug\net8.0\Task 4.exe
+C:\gayms\Projects\Task 4\bin\Debug\net8.0\Task 4.deps.json
+C:\gayms\Projects\Task 4\bin\Debug\net8.0\Task 4.runtimeconfig.json
+C:\gayms\Projects\Task 4\bin\Debug\net8.0\Task 4.dll
+C:\gayms\Projects\Task 4\bin\Debug\net8.0\Task 4.pdb
+C:\gayms\Projects\Task 4\obj\Debug\net8.0\Task 4.GeneratedMSBuildEditorConfig.editorconfig
+C:\gayms\Projects\Task 4\obj\Debug\net8.0\Task 4.AssemblyInfoInputs.cache
+C:\gayms\Projects\Task 4\obj\Debug\net8.0\Task 4.AssemblyInfo.cs
+C:\gayms\Projects\Task 4\obj\Debug\net8.0\Task 4.csproj.CoreCompileInputs.cache
+C:\gayms\Projects\Task 4\obj\Debug\net8.0\Task 4.dll
+C:\gayms\Projects\Task 4\obj\Debug\net8.0\refint\Task 4.dll
+C:\gayms\Projects\Task 4\obj\Debug\net8.0\Task 4.pdb
+C:\gayms\Projects\Task 4\obj\Debug\net8.0\Task 4.genruntimeconfig.cache
+C:\gayms\Projects\Task 4\obj\Debug\net8.0\ref\Task 4.dll
