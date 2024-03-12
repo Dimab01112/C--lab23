@@ -1,0 +1,14 @@
+C:\gayms\Projects\Task1_Pr3\bin\Debug\net8.0\Task1_Pr3.exe
+C:\gayms\Projects\Task1_Pr3\bin\Debug\net8.0\Task1_Pr3.deps.json
+C:\gayms\Projects\Task1_Pr3\bin\Debug\net8.0\Task1_Pr3.runtimeconfig.json
+C:\gayms\Projects\Task1_Pr3\bin\Debug\net8.0\Task1_Pr3.dll
+C:\gayms\Projects\Task1_Pr3\bin\Debug\net8.0\Task1_Pr3.pdb
+C:\gayms\Projects\Task1_Pr3\obj\Debug\net8.0\Task1_Pr3.GeneratedMSBuildEditorConfig.editorconfig
+C:\gayms\Projects\Task1_Pr3\obj\Debug\net8.0\Task1_Pr3.AssemblyInfoInputs.cache
+C:\gayms\Projects\Task1_Pr3\obj\Debug\net8.0\Task1_Pr3.AssemblyInfo.cs
+C:\gayms\Projects\Task1_Pr3\obj\Debug\net8.0\Task1_Pr3.csproj.CoreCompileInputs.cache
+C:\gayms\Projects\Task1_Pr3\obj\Debug\net8.0\Task1_Pr3.dll
+C:\gayms\Projects\Task1_Pr3\obj\Debug\net8.0\refint\Task1_Pr3.dll
+C:\gayms\Projects\Task1_Pr3\obj\Debug\net8.0\Task1_Pr3.pdb
+C:\gayms\Projects\Task1_Pr3\obj\Debug\net8.0\Task1_Pr3.genruntimeconfig.cache
+C:\gayms\Projects\Task1_Pr3\obj\Debug\net8.0\ref\Task1_Pr3.dll
