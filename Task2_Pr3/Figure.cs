@@ -18,20 +18,39 @@ public class Figure
     {
         return Math.Sqrt(Math.Pow(B.X - A.X, 2) + Math.Pow(B.Y - A.Y, 2));
     }
-
-  public void PerimeterCalculator()
+public void PerimeterCalculator()
 {
     double perimeter = 0;
-    string figureName = string.Join("", points.Select(point => point.Label)); 
+    string figureName = "";
 
     for (int i = 0; i < points.Length; i++)
     {
         Point currentPoint = points[i];
         Point nextPoint = points[(i + 1) % points.Length];
         perimeter += LengthSide(currentPoint, nextPoint);
+        figureName += currentPoint.Label; 
     }
 
-    Console.WriteLine($"Name of the figure: {figureName}");
+  
+     string figureType;
+        switch (points.Length)
+        {
+            case 3:
+                figureName = "Triangle";
+                break;
+            case 4:
+                figureName = "Square";
+                break;
+            case 5:
+                figureName = "Pentagon";
+                break;
+            default:
+                figureName = "Unknown Figure";
+                break;
+        }
+
+    Console.WriteLine($"Name : {figureName}"); 
+    Console.WriteLine($"Points of the figure: {figureType}");
     Console.WriteLine($"Perimeter of the figure: {perimeter}");
 }
 
