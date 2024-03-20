@@ -1,24 +1,18 @@
-
 using System;
 
-class Title
+public class Title
 {
-    private string titleName;
+    private string bookTitle;
 
-    public Title(string titleName)
+    public Title(string title)
     {
-        this.titleName = titleName;
+        bookTitle = title;
     }
 
     public void Show()
     {
         Console.ForegroundColor = ConsoleColor.Blue;
-        Console.WriteLine("Title: " + titleName);
+        Console.WriteLine($"Title: {bookTitle}");
         Console.ResetColor();
-    }
-
-    public string TitleName
-    {
-        get { return titleName; }
     }
 }
