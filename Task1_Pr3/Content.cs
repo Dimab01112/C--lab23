@@ -1,24 +1,25 @@
 using System;
 
-class Content
+public class Content
 {
     private string bookContent;
-
-    public Content(string bookContent)
-    {
-        this.bookContent = bookContent;
-    }
-
-    public void Show()
-    {
-        Console.ForegroundColor = ConsoleColor.Red;
-        Console.WriteLine("Content: " + bookContent);
-        Console.ResetColor();
-    }
 
     public string BookContent
     {
         get { return bookContent; }
         set { bookContent = value; }
     }
+
+    public Content(string content)
+    {
+        bookContent = content;
+    }
+
+    public void Show()
+    {
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.WriteLine($"Content: {bookContent}");
+        Console.ResetColor();
+    }
 }
+
