@@ -4,15 +4,15 @@ class Program
 {
     static void Main()
     {
-        Book myBook = new Book("Sample Book", "John Doe", "This is the content of the book.");
+        Book myBook = new Book("Book", "Name", "Content");
 
         myBook.Show();
 
-       
-        myBook.AuthorName = "Jane Smith";
-        myBook.BookContent = "Updated content of the book.";
+        myBook.SetAuthorName("Name2");
+        myBook.SetBookContent("Content2");
 
         myBook.Show();
     }
 }
+
 
