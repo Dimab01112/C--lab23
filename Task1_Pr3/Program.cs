@@ -2,23 +2,17 @@ using System;
 
 class Program
 {
-    static void Main(string[] args)
+    static void Main()
     {
-        Book myBook = new Book("The book", "Name of author", "Context");
+        Book myBook = new Book("Sample Book", "John Doe", "This is the content of the book.");
+
         myBook.Show();
 
-        Console.WriteLine("\nChanging author's name...");
-        myBook.AuthorName = "someone2";
-        myBook.Show();
+       
+        myBook.AuthorName = "Jane Smith";
+        myBook.BookContent = "Updated content of the book.";
 
-        Console.WriteLine("\nChanging book content...");
-        myBook.BookContent = "Context2.";
         myBook.Show();
-
-        Console.WriteLine("\nChanging author's name...");
-        myBook.AuthorName = "someone";
-        myBook.Show();
-
-   
     }
 }
+
