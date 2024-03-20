@@ -1,9 +1,8 @@
-
 using System;
 
-class Book
+public class Book
 {
-    private Title title;
+    private readonly Title title;
     private Author author;
     private Content content;
 
@@ -21,21 +20,13 @@ class Book
         content.Show();
     }
 
-
-    public string BookTitle
+    public void SetAuthorName(string authorName)
     {
-        get { return title.TitleName; }
+        author.AuthorName = authorName;
     }
 
-    public string AuthorName
+    public void SetBookContent(string bookContent)
     {
-        get { return author.AuthorName; }
-        set { author.AuthorName = value; }
-    }
-
-    public string BookContent
-    {
-        get { return content.BookContent; }
-        set { content.BookContent = value; }
+        content.BookContent = bookContent;
     }
 }
