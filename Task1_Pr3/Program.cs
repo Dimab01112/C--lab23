@@ -1,54 +1,133 @@
 using System;
 
-class Program
+class Book
 {
-    static void Main()
+    private Title title;
+    private Author author;
+    private Content content;
+
+    public Book(string bookTitle, string authorName, string bookContent)
     {
-        Book myBook = new Book();
+        title = new Title(bookTitle);
+        author = new Author(authorName);
+        content = new Content(bookContent);
+    }
 
-        myBook.Title = "The Witcher";
-        myBook.Author = "Andrzej Sapkowski";
-        myBook.Content = "Good book";
+    public void Show()
+    {
+        title.Show();
+        author.Show();
+        content.Show();
+    }
 
-        myBook.Show();
+
+    public string BookTitle
+    {
+        get { return title.TitleName; }
+    }
+
+    public string AuthorName
+    {
+        get { return author.AuthorName; }
+        set { author.AuthorName = value; }
+    }
+
+    public string BookContent
+    {
+        get { return content.BookContent; }
+        set { content.BookContent = value; }
     }
 }
 
-class Book
+class Title
 {
-    private string title;
-    private string author;
-    private string content;
+    private string titleName;
 
-    public string Title
+    public Title(string titleName)
     {
-        get { return title; }
-        set { title = value; }
-    }
-
-    public string Author
-    {
-        get { return author; }
-        set { author = value; }
-    }
-
-    public string Content
-    {
-        get { return content; }
-        set { content = value; }
+        this.titleName = titleName;
     }
 
     public void Show()
     {
         Console.ForegroundColor = ConsoleColor.Blue;
-        Console.WriteLine($"Book name: {Title}");
-
-        Console.ForegroundColor = ConsoleColor.Green;
-        Console.WriteLine($"Author: {Author}");
-
-        Console.ForegroundColor = ConsoleColor.Red;
-        Console.WriteLine($"Book content: {Content}");
-
+        Console.WriteLine("Title: " + titleName);
         Console.ResetColor();
+    }
+
+    public string TitleName
+    {
+        get { return titleName; }
+    }
+}
+
+class Author
+{
+    private string authorName;
+
+    public Author(string authorName)
+    {
+        this.authorName = authorName;
+    }
+
+    public void Show()
+    {
+        Console.ForegroundColor = ConsoleColor.Green;
+        Console.WriteLine("Author: " + authorName);
+        Console.ResetColor();
+    }
+
+    public string AuthorName
+    {
+        get { return authorName; }
+        set { authorName = value; }
+    }
+}
+
+class Content
+{
+    private string bookContent;
+
+    public Content(string bookContent)
+    {
+        this.bookContent = bookContent;
+    }
+
+    public void Show()
+    {
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.WriteLine("Content: " + bookContent);
+        Console.ResetColor();
+    }
+
+    public string BookContent
+    {
+        get { return bookContent; }
+        set { bookContent = value; }
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Book myBook = new Book("The book", "Name of author", "Context");
+        myBook.Show();
+
+        Console.WriteLine("\nChanging author's name...");
+        myBook.AuthorName = "someone2";
+        myBook.Show();
+
+        Console.WriteLine("\nChanging book content...");
+        myBook.BookContent = "Context2.";
+        myBook.Show();
+
+        Console.WriteLine("\nChanging author's name...");
+        myBook.AuthorName = "someone";
+        myBook.Show();
+
+    }
+}
+
     }
 }
