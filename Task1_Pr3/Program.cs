@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 class Program
 {
@@ -6,11 +6,9 @@ class Program
     {
         Book myBook = new Book();
 
-
-        myBook.AddTitle("Name");
-        myBook.AddAuthor("Author");
-        myBook.AddContent("Content");
-
+        myBook.Title = "The Witcher";
+        myBook.Author = "Andrzej Sapkowski";
+        myBook.Content = "Good book";
 
         myBook.Show();
     }
@@ -18,88 +16,39 @@ class Program
 
 class Book
 {
-    private Title title;
-    private Author author;
-    private Content content;
+    private string title;
+    private string author;
+    private string content;
 
-    public Book()
+    public string Title
     {
-        title = new Title();
-        author = new Author();
-        content = new Content();
+        get { return title; }
+        set { title = value; }
     }
 
-    public void AddTitle(string bookTitle)
+    public string Author
     {
-        title.SetTitle(bookTitle);
+        get { return author; }
+        set { author = value; }
     }
 
-    public void AddAuthor(string authorName)
+    public string Content
     {
-        author.SetAuthor(authorName);
-    }
-
-    public void AddContent(string bookContent)
-    {
-        content.SetContent(bookContent);
+        get { return content; }
+        set { content = value; }
     }
 
     public void Show()
     {
         Console.ForegroundColor = ConsoleColor.Blue;
-        title.Show();
+        Console.WriteLine($"Book name: {Title}");
 
         Console.ForegroundColor = ConsoleColor.Green;
-        author.Show();
+        Console.WriteLine($"Author: {Author}");
 
         Console.ForegroundColor = ConsoleColor.Red;
-        content.Show();
+        Console.WriteLine($"Book content: {Content}");
 
         Console.ResetColor();
-    }
-}
-
-class Title
-{
-    private string title;
-
-    public void SetTitle(string bookTitle)
-    {
-        title = bookTitle;
-    }
-
-    public void Show()
-    {
-        Console.WriteLine($"Book name: {title}");
-    }
-}
-
-class Author
-{
-    private string author;
-
-    public void SetAuthor(string authorName)
-    {
-        author = authorName;
-    }
-
-    public void Show()
-    {
-        Console.WriteLine($"Author: {author}");
-    }
-}
-
-class Content
-{
-    private string content;
-
-    public void SetContent(string bookContent)
-    {
-        content = bookContent;
-    }
-
-    public void Show()
-    {
-        Console.WriteLine($"Book content: {content}");
     }
 }
